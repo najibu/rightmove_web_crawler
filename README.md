@@ -15,8 +15,6 @@ Begin by cloning this repository to your machine, and installing all Composer & 
 ```bash
 git clone git@github.com:najibu/rightmove_web_crawler.git
 cd rightmove_web_crawler && composer install
-cp .env.example .env
-php artisan key:generate
 php artisan serve
 ```
 
