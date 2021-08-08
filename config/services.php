@@ -30,4 +30,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'rightmove' => [
+        'url' => 'https://www.rightmove.co.uk/house-prices.html'
+    ],
+
 ];

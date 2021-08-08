@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WebCrawlerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [WebCrawlerController::class, 'show']);
+Route::get('search/rightmove', [WebCrawlerController::class, 'search'])
+    ->name('search');
